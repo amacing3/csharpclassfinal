@@ -6,6 +6,7 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
+            /*
             Console.WriteLine("Hello World!");
             MyFunction();
             myInt = IntFunction(22);
@@ -25,6 +26,6 @@ namespace ConsoleApplication
 
         public static string StringFunction (string _name) {
             return "You've done well " + _name;
-        }
+        } */
     }
 }
