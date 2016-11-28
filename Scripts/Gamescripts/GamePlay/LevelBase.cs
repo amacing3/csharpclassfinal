@@ -1,5 +1,6 @@
 using System;
 public class LevelBase{
+    public string[] objects = new string[MainFloorLevel.objects]; 
 
     public void Encounter(int i){
         switch (i){
@@ -28,6 +29,11 @@ public class LevelBase{
             case 4:
                 Console.WriteLine("You have entered the " + objects[i] + ". You have gained 1 sanity.");
                 //player gains 1 sanity
+            break;
+
+            default:
+                Console.WriteLine("Your path is clear.");
+                //rerun the walk
             break;
         }
 
