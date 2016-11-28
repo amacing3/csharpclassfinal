@@ -1,6 +1,6 @@
 using System;
 public class LevelBase{
-    public string[] objects = new string[MainFloorLevel.objects]; 
+    public string[] objects = new MainFloorLevel.objects; 
 
     public void Encounter(int i){
         switch (i){
