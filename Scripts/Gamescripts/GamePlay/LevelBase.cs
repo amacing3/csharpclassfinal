@@ -1,6 +1,9 @@
 using System;
 public class LevelBase{
-    public string[] objects = new MainFloorLevel.objects; 
+    public MainFloorLevel[] objects = {new MainFloorLevel(), new MainFloorLevel()};
+    public LevelBase(){
+    //objects[0].environment = {"Dark", "Creaky", "Burned"};
+    } 
 
     public void Encounter(int i){
         switch (i){
