@@ -10,12 +10,12 @@ public class LevelBase{
             case 0:
                 Console.WriteLine("You have entered the " + objects[i] + "You must make a sanity roll to leave.");
                 //create player class and roll class
-                //make the player do a sanity roll to get 5 or higher
+                //make the player do a sanity roll to get 4 or higher
             break;
 
             case 1:
-                Console.WriteLine("You have entered the " + objects[i] + ". You have fallen to the basement. You take 2 damage.");
-                //make player loose 2 health
+                Console.WriteLine("You have entered the " + objects[i] + ". You have fallen to the basement. You take 1 damage.");
+                //make player loose 1 health
                 //enter the basement level
             break;
 
