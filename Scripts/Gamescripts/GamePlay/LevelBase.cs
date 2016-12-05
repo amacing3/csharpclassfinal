@@ -1,6 +1,6 @@
 using System;
 public class LevelBase{
-    public MainFloorLevel[] objects = {new MainFloorLevel(), new MainFloorLevel()};
+    public MainFloorLevel[] rooms = {new MainFloorLevel(), new MainFloorLevel()};
     public LevelBase(){
     //objects[0].environment = {"Dark", "Creaky", "Burned"};
     } 
@@ -8,28 +8,28 @@ public class LevelBase{
     public void Encounter(int i){
         switch (i){
             case 0:
-                Console.WriteLine("You have entered the " + objects[i] + "You have lost 1 Sanity.");
+                Console.WriteLine("You have entered the " + rooms[i] + "You have lost 1 Sanity.");
                 PlayerBase.Sanity --;
             break;
 
             case 1:
-                Console.WriteLine("You have entered the " + objects[i] + ". You have fallen to the basement. You take 1 damage.");
+                Console.WriteLine("You have entered the " + rooms[i] + ". You have fallen to the basement. You take 1 damage.");
                 PlayerBase.Health --;
                 //enter the basement level
             break;
 
             case 2:
-                Console.WriteLine("You have entered the " + objects[i] + ". You slide to the basement.");
+                Console.WriteLine("You have entered the " + rooms[i] + ". You slide to the basement.");
                 //enter the basement level
             break;
 
             case 3:
-                Console.WriteLine("You have entered the " + objects[i] + ". You gain 1 knowledge.");
+                Console.WriteLine("You have entered the " + rooms[i] + ". You gain 1 knowledge.");
                 PlayerBase.Knowledge ++;
             break;
 
             case 4:
-                Console.WriteLine("You have entered the " + objects[i] + ". You have gained 1 sanity.");
+                Console.WriteLine("You have entered the " + rooms[i] + ". You have gained 1 sanity.");
                 PlayerBase.Sanity ++;
             break;
 
