@@ -1,6 +1,7 @@
 public class MainFloorLevel: LevelBase{
 
-    public string[] rooms = {"Graveyard", "Collapsed Room", "Coal shute", "Library", "Chapel"};
+//the rooms for the main floor.
+    public new string[] rooms = {"Graveyard", "Collapsed Room", "Coal shute", "Library", "Chapel"};
 
     
 }

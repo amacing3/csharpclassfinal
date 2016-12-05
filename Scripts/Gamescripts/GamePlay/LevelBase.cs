@@ -4,7 +4,7 @@ public class LevelBase{
     public LevelBase(){
     //objects[0].environment = {"Dark", "Creaky", "Burned"};
     } 
-
+//Different things happen when you enter certan rooms.
     public void Encounter(int i){
         switch (i){
             case 0:

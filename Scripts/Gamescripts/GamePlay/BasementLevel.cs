@@ -1,4 +1,5 @@
 public class BasementLevel: LevelBase{
 
-    public string[] rooms = {"Crypt", "Furnace Room", "Stairs", "Larder", "Vault"};
+//the rooms for the basement floor.
+    public new string[] rooms = {"Crypt", "Furnace Room", "Stairs", "Larder", "Vault"};
 }
