@@ -1,6 +1,16 @@
 using System;
 public class Game{
 
+    public Move move;
+    public LevelBase level;
+
+    public Game() {
+        move = new Move();
+        level = new LevelBase();
+
+
+    }
+
     public void Start (){
         //The player must enter a name and choose a profession then they will enter the house.
         Console.WriteLine("Please type your name");
@@ -23,6 +33,7 @@ public class Game{
     //the player will encounter rooms which will affect their stats or change their location.
         if (gameState == "Play"){
             //runs the move function
+            level.Encounter(move.Walk());
         }else if (gameState == "End"){
             Console.WriteLine("Game over.");
         }

@@ -1,6 +1,6 @@
 using System;
 public class LevelBase{
-    public MainFloorLevel[] rooms = {new MainFloorLevel(), new MainFloorLevel()};
+    public string[] rooms = {"Graveyard", "Collapsed Room", "Coal shute", "Library", "Chapel"};
     public LevelBase(){
     //objects[0].environment = {"Dark", "Creaky", "Burned"};
     } 
