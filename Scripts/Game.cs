@@ -7,7 +7,7 @@ public class Game
     public string name;
     public string profession;
     public string gameState;
-    public bool canPlay = false;
+    public bool canPlay = true;
 
     public Game()
     {
@@ -46,22 +46,27 @@ public class Game
         Console.WriteLine("Welcome " + name + ". You are a " + profession + ". You have entered the mansion.");
 
 
-        Console.WriteLine("Pick one: Play or End");
-        gameState = Console.ReadLine();
+
         //the player will encounter rooms which will affect their stats or change their location.
-        while (gameState == "Play")
+        while (canPlay == true)
         {
-            canPlay = true;
-            level.Encounter(move.Walk());
-            GameTimer();
             Console.WriteLine("Pick one: Play or End");
             gameState = Console.ReadLine();
+            level.Encounter(move.Walk());
+            GameTimer();
+            if (gameState == "End")
+            {
+                canPlay = false;
+                Console.WriteLine("Game Over.");
+            }
         }
-        while (gameState == "End")
+        
+        /*
+        if (canPlay == false)
         {
             Console.WriteLine("Game Over.");
         }
-
+*/
 
 
         //else if (gameState == "End"){
