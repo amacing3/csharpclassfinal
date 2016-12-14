@@ -61,20 +61,6 @@ public class Game
             }
         }
         
-        /*
-        if (canPlay == false)
-        {
-            Console.WriteLine("Game Over.");
-        }
-*/
-
-
-        //else if (gameState == "End"){
-        // Console.WriteLine("Game over.");
-
-
-
-
     }
 
 

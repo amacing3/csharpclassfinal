@@ -2,10 +2,7 @@ using System;
 public class LevelBase
 {
     public string[] rooms = { "Graveyard", "Collapsed Room", "Coal shute", "Library", "Chapel" };
-    public LevelBase()
-    {
-        //objects[0].environment = {"Dark", "Creaky", "Burned"};
-    }
+
     //Different things happen when you enter certan rooms.
     public void Encounter(int i)
     {
